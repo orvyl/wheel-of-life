@@ -1,0 +1,108 @@
+@import "compass/css3";
+
+body {
+    padding: 50px;
+}
+
+.sliderHolder {
+    width: 50%;
+    margin: auto;
+    float: right;
+}
+
+.sliderHolder .p-2 {
+    width: 25%;
+    margin: 20px;
+}
+
+.sliderHolder .p-2 p {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.wheelCat {
+    width:100%;
+    font-family: "Lato", san-serif, serif;
+    font-size:20px;
+}
+
+.sliderAll{
+    height:100px;
+    padding-top:55px;
+}
+
+.self-growth-slider .rangeslider__fill{
+    background-color:#00A3CE;
+}
+.spirituality-slider .rangeslider__fill{
+    background-color:#22CBED;
+}
+.recreation-slider .rangeslider__fill{
+    background-color:#EB67A2;
+}
+.finances-slider .rangeslider__fill{
+    background-color:#FDA9ED;
+}
+.career-slider .rangeslider__fill{
+    background-color:#EC5B22;
+}
+.relationships-slider .rangeslider__fill{
+    background-color:#F78F21;
+}
+.friends-slider .rangeslider__fill{
+    background-color:#148F1E;
+}
+.health-slider .rangeslider__fill{
+    background-color:#1EC428;
+}
+.family-slider .rangeslider__fill{
+    background-color:#234425;
+}
+.rangeslider__value-bubble{
+    display:none;
+}
+
+*,
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+.rangeslider__value-bubble {
+    border: 1px solid #ccc;
+    display: block;
+    padding: 5px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 25px;
+    width: 100px;
+    margin-left: -50px;
+    text-align: center;
+    @include border-radius(5px);
+    font-family:"Lato", san-serif;
+    font-size:13px;
+
+    &:before,
+    &:after {
+        border-width: 11px;
+        border-style: solid;
+        border-color: transparent;
+        content: "";
+        display: block;
+        margin: auto;
+        width: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    &:before {
+        border-top-color: #ccc;
+        border-bottom-width: 0;
+        bottom: -11px;
+    }
+    &:after {
+        border-top-color: #fff;
+        border-bottom-width: 0;
+        bottom: -10px;
+    }
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wheel of Life | Life Coach Philippines</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 style="text-align: center">The Wheel of Life</h1>
+        <hr />
+        <main>
+            <div style="width: 50%; margin: auto; float: left">
+                <canvas id="polarChart"></canvas>
+            </div>
+            <div class="sliderHolder d-flex justify-content-center flex-wrap">
+
+                <div class="p-2">
+                    <div class="wheelCat">Self-Growth</div>
+                    <div class="sliderAll">
+                        <div class="self-growth-slider">
+                            <label for="self-growth-range"></label>
+                            <input type=range value=1 min=0 max=10 step=1 id="self-growth-range">
+                        </div>
+                    </div>
+                    <p>Continuous process of learning, improving, and evolving as an individual.</p>
+                </div>
+
+
+                <div class="p-2">
+                    <div class="wheelCat">Spirituality</div>
+                    <div class="sliderAll">
+                        <div class="spirituality-slider">
+                            <label for="spirituality-range"></label>
+                            <input type=range value=1 min=0 max=10 step=1 id="spirituality-range">
+                        </div>
+                    </div>
+                    <p>The exploration and connection to something greater than oneself, often involving beliefs about the universe, purpose, and inner peace.</p>
+                </div>
+
+                <div class="p-2">
+                    <div class="wheelCat">Recreation</div>
+                    <div class="sliderAll">
+                        <div class="recreation-slider">
+                            <label for="recreation-range"></label>
+                            <input type=range value=1 min=0 max=10 step=1 id="recreation-range">
+                        </div>
+                    </div>
+                    <p>The enjoyable and leisurely activities pursued for relaxation, entertainment, and personal fulfillment.</p>
+                </div>
+
+                <div class="p-2">
+                    <div class="wheelCat">Finances</div>
+                    <div class="sliderAll">
+                        <div class="finances-slider">
+                            <label for="finances-range"></label>
+                            <input type=range value=1 min=0 max=10 step=1 id="finances-range">
+                        </div>
+                    </div>
+                    <p>Your income, expenses, and savings to build a solid foundation for your future financial well-being.</p>
+                </div>
+
+                <div class="p-2">
+                    <div class="wheelCat">Career</div>
+                    <div class="sliderAll">
+                        <div class="career-slider">
+                            <label for="career-range"></label>
+                            <input type=range value=1 min=0 max=10 step=1 id="career-range">
+                        </div>
+                    </div>
+                    <p>Pursuing your passions and build a successful working life.</p>
+                </div>
+
+                <div class="p-2">
+                    <div class="wheelCat">Relationships</div>
+                    <div class="sliderAll">
+                        <div class="relationships-slider">
+                            <label for="relationship-range"></label>
+                            <input type=range value=1 min=0 max=10 step=1 id="relationship-range">
+                        </div>
+                    </div>
+                    <p>Bonds you created with others through understanding, support, and care, making life more meaningful together.</p>
+                </div>
+
+                <div class="p-2">
+                    <div class="wheelCat">Friends</div>
+                    <div class="sliderAll">
+                        <div class="friends-slider">
+                            <label for="friends-range"></label>
+                            <input type=range value=1 min=0 max=10 step=1 id="friends-range">
+                        </div>
+                    </div>
+                    <p>Trusted companions who bring joy and support into our lives as we navigate both good times and challenges together.</p>
+                </div>
+
+                <div class="p-2">
+                    <div class="wheelCat">Health</div>
+                    <div class="sliderAll">
+                        <div class="health-slider">
+                            <label for="health-range"></label>
+                            <input type=range value=1 min=0 max=10 step=1 id="health-range">
+                        </div>
+                    </div>
+                    <p>Your well-being, encompassing physical, mental, and emotional vitality, achievable through balanced habits and self-care.</p>
+                </div>
+
+                <div class="p-2">
+                    <div class="wheelCat">Family</div>
+                    <div class="sliderAll">
+                        <div class="family-slider">
+                            <label for="family-range"></label>
+                            <input type=range value=1 min=0 max=10 step=1 id="family-range">
+                        </div>
+                    </div>
+                    <p>The close-knit circle of love and support that makes life meaningful.</p>
+                </div>
+
+            </div>
+        </main>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js"></script>
+        <script src="js/wheel-of-life.js"></script>
+    </body>
+</html>
